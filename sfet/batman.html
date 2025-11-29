@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hover Effect</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: #02359c;
+            transition: 0.8s;
+            box-shadow: inset 0 0 0px black;
+        }
+
+        body:hover {
+            background-color: #ed0606;
+            box-shadow: inset 0 0 200px black;
+        }
+
+        h1{
+            font-size: 70px;
+            color: white;
+            opacity: 0;
+            transition: 0.8s;
+            transform: scale(0.7);
+            font-style:oblique
+        }
+        p{
+            font-size: 40px;
+            color: rgb(197, 192, 192);
+            opacity: 0;
+            transition: 0.8s;
+            transform: scale(0.2);
+        }
+
+        body:hover h1{
+            opacity: 1;
+            transform: scale(1);
+            letter-spacing: 10px;
+        }
+        body:hover p{
+            opacity: 1;
+            transform: scale(0.8);
+        }
+    </style>
+</head>
+<body>
+<div style="display:flex;justify-content:center;align-items:center;height:500px">
+<h1>HOVER MODE</h1></div>
+<p>In HTML and CSS, "hover mode" refers to the use of the CSS :hover pseudo-class to apply specific styles to an
+     element when a user moves a pointing device (like a mouse cursor) 
+    over it. It is not an actual "mode" in HTML itself, but rather a styling feature implemented with
+     CSS to enhance user experience and interactivity.</p>
+</body>
+</html>
