@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Required HTML Tags</title>
+</head>
+<body>
+
+<header>
+    <h1>HTML Multimedia Elements</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+</nav>
+
+<main>
+
+<section>
+    <h2>Image & Image Map</h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVGlTEAVgr7scyvnadqKUXti66egRuO8N263DfTuSRNoxWyWnaU1yfG9iSb4w97Dyi8AA&usqp=CAU"
+     alt="med-robot" usemap="#mymap">
+
+    <map name="mymap">
+        <area shape="rect" coords="0,0,100,100" href="https://example.com" alt="Area">
+    </map>
+
+    <figure>
+        <img src="light-bulb-503881_640.jpg" alt="Figure Image">
+        <figcaption>ideas</figcaption>
+    </figure>
+</section>
+
+<section>
+    <h2>Video</h2>
+    <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <track src="subtitles.vtt" kind="subtitles" srclang="en">
+    </video>
+</section>
+
+<section>
+    <h2>Audio</h2>
+    <audio controls>
+        <source src="robot-talk-344757.mp3" type="audio/mpeg">
+    </audio>
+</section>
+
+<section>
+    <h2>SVG</h2>
+    <svg width="200" height="100">
+        <rect width="200" height="100" fill="skyblue"></rect>
+    </svg>
+</section>
+
+<section>
+    <h2>Iframe</h2>
+    <iframe src="https://www.wikipedia.org" width="500" height="500"></iframe>
+</section>
+
+<section>
+    <h2>Embed</h2>
+    <embed src="https://www.wikipedia.org/" width="300" height="200">
+</section>
+
+<article>
+    <h2>Article Section</h2>
+    <p>This is an article element.</p>
+</article>
+
+<aside>
+    <h2>Aside Section</h2>
+    <p>This is an aside element.</p>
+</aside>
+
+<section>
+    <h2>Form Elements</h2>
+    
+        <fieldset>
+            <legend>Calculator</legend>
+
+            <label>Choose a browser:</label>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Safari">
+            </datalist>
+
+            <br><br>
+<form oninput="result.value=parseint(a.value)+parseint(b.value)">
+            <input type="number" id="a" value="5">
+            +
+            <input type="number" id="b" value="10">
+            = 
+            <output name="result"></output>
+
+        </fieldset>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>Footer content</p>
+</footer>
+
+</body>
+</html>
